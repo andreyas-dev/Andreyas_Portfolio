@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andreyas | Mechatronics & Control Engineering Portfolio</title>
+    <meta name="description" content="Portfolio of Andreyas, a final-year Mechatronics & Control Engineering student specializing in robotics, embedded systems, and AI/ML-driven automation.">
+
+    <!-- Open Graph / LinkedIn / Facebook / WhatsApp preview -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Andreyas | Mechatronics & Control Engineering Portfolio">
+    <meta property="og:description" content="Robotics, embedded systems, and control engineering projects by a final-year Mechatronics student.">
+    <meta property="og:image" content="https://YOUR-DOMAIN-HERE/assets/profile.png">
+    <meta property="og:url" content="https://YOUR-DOMAIN-HERE">
+
+<!-- Twitter card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Andreyas | Mechatronics & Control Engineering Portfolio">
+<meta name="twitter:description" content="Robotics, embedded systems, and control engineering projects by a final-year Mechatronics student.">
+<meta name="twitter:image" content="https://YOUR-DOMAIN-HERE/assets/profile.png">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons (Vanilla) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- Favicon / Tab Icon -->
+    <link rel="icon" type="image/svg+xml" href="./assets/tech_logo.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon.png">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <link rel="apple-touch-icon" href="./assets/favicon.png">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo-container">
+                <div class="logo-ring"></div>
+                <img src="./assets/tech_logo.svg" alt="Andreyas Tech Logo" class="preloader-logo-img" referrerPolicy="no-referrer">
+            </div>
+            <div class="preloader-brand">Andreyas</div>
+            <div class="preloader-subtext">MECHATRONICS & TECH VENTURES</div>
+            <div class="preloader-bar-wrapper">
+                <div id="preloader-bar" class="preloader-bar-fill"></div>
+            </div>
+            <div class="preloader-status-container">
+                <span id="preloader-status-text">INITIALIZING SYSTEM ARCHITECTURE...</span>
+                <span id="preloader-percent" class="text-accent">0%</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor (Desktop) -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Background Animation Canvas -->
+    <canvas id="bg-canvas" class="bg-canvas"></canvas>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="scroll-bar"></div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="glass-nav">
+        <div class="nav-container">
+            <a href="#hero" class="logo-brand magnetic">
+                <img src="./assets/tech_logo.svg" alt="Andreyas Tech Logo" class="brand-logo-img" referrerPolicy="no-referrer">
+                <span class="logo-text">Andreyas</span>
+            </a>
+            <nav class="nav-links">
+                <a href="#hero" class="magnetic">Home</a>
+                <a href="#about" class="magnetic">About</a>
+                <a href="#skills" class="magnetic">Skills</a>
+                <a href="#projects" class="magnetic">Projects</a>
+                <a href="#experience" class="magnetic">Experience</a>
+                <a href="#contact" class="magnetic">Contact</a>
+                <a href="#" class="btn-nav-resume magnetic"><i data-lucide="download"></i> Resume / CV</a>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i data-lucide="menu"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-grid container">
+                <div class="hero-content">
+                    <h1 class="glitch-text" data-text="ANDREYAS">ANDREYAS</h1>
+                    <h2 class="hero-subtitle">Final-Year Mechatronics &amp; Control Engineering Student</h2>
+                    <div class="hero-specialties">
+                        <span class="specialty-item"><i data-lucide="bot"></i> Robotics</span>
+                        <span class="specialty-divider">&bull;</span>
+                        <span class="specialty-item"><i data-lucide="cpu"></i> Embedded Systems</span>
+                        <span class="specialty-divider">&bull;</span>
+                        <span class="specialty-item"><i data-lucide="brain"></i> AI/ML</span>
+                        <span class="specialty-divider">&bull;</span>
+                        <span class="specialty-item"><i data-lucide="box"></i> CAD Design</span>
+                    </div>
+                    <p class="hero-tagline reveal">Bridging the gap between software intelligence and mechanical reality through innovative robotics and embedded systems.</p>
+                    
+                    <div class="cta-group reveal">
+                        <a href="#" class="btn btn-primary magnetic btn-hero-resume"><i data-lucide="download"></i> RESUME</a>
+                        <a href="#projects" class="btn btn-cyan-outline magnetic"><i data-lucide="folder-git-2"></i> VIEW PROJECTS</a>
+                        <a href="#contact" class="btn btn-outline magnetic"><i data-lucide="mail"></i> CONTACT ME</a>
+                    </div>
+                    
+                    <div class="social-links reveal">
+                        <a href="https://github.com/andreyas-dev" target="_blank" rel="noopener noreferrer" class="magnetic" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" width="20" height="20" fill="currentColor"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></a>
+                        <a href="https://www.linkedin.com/in/eng-andreyas/" target="_blank" rel="noopener noreferrer" class="magnetic" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="20" height="20" fill="currentColor"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a>
+                        <a href="https://wa.me/923266876694" target="_blank" rel="noopener noreferrer" class="magnetic" aria-label="WhatsApp"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="20" height="20" fill="currentColor"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg></a>
+                        <a href="mailto:eng.andreyas@gmail.com" class="magnetic" aria-label="Email"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20" height="20" fill="currentColor"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg></a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual reveal">
+                    <div class="profile-frame-container float-anim">
+                        <div class="profile-ambient-glow"></div>
+                        <div class="tech-orbit-ring"></div>
+                        <div class="tech-inner-ring"></div>
+                        
+                        <!-- HUD Corner Accents for high-tech mechatronics engineering style -->
+                        <div class="hud-corner top-left"></div>
+                        <div class="hud-corner top-right"></div>
+                        <div class="hud-corner bottom-left"></div>
+                        <div class="hud-corner bottom-right"></div>
+
+                        <div class="profile-img-wrapper">
+                            <img src="./assets/profile.png" alt="Andreyas - Mechatronics Engineer" class="profile-img">
+                        </div>
+
+                        <div class="status-badge">
+                            <span class="pulse-dot"></span>
+                            <span class="status-text">
+                                <span>Available for Hire</span>
+                                <span class="badge-dot">&bull;</span>
+                                <span class="location-info"><i data-lucide="map-pin"></i> Lahore, Pakistan</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats-grid container reveal">
+                <a href="https://github.com/andreyas-dev" target="_blank" rel="noopener noreferrer" class="stat-item tilt-card magnetic">
+                    <div class="stat-num-container"><h3 class="counter" data-target="10">0</h3><span class="text-accent">+</span></div>
+                    <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" width="18" height="18" fill="currentColor"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg> GitHub Projects</p>
+                </a>
+                <a href="https://www.linkedin.com/in/eng-andreyas/" target="_blank" rel="noopener noreferrer" class="stat-item tilt-card magnetic">
+                    <div class="stat-num-container"><h3 class="counter" data-target="4.5">0</h3><span class="text-accent">k+</span></div>
+                    <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="18" height="18" fill="currentColor"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg> Connections</p>
+                </a>
+                <a href="#credentials" class="stat-item tilt-card magnetic">
+                    <div class="stat-num-container"><h3 class="counter" data-target="8">0</h3></div>
+                    <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="18" height="18" fill="currentColor"><path d="M256 0c-17.7 0-32 14.3-32 32V66.7C160.3 80.6 112 136.2 112 201.1c0 68.4 51.5 125 117.8 133.5l-19.3 115.8c-2.4 14.4 7.3 27.6 21.7 27.6h47.7c14.4 0 24.1-13.2 21.7-27.6l-19.3-115.8C348.5 326.1 400 269.5 400 201.1c0-64.9-48.3-120.5-112-134.4V32c0-17.7-14.3-32-32-32z"/></svg> Certifications</p>
+                </a>
+                <a href="#experience" class="stat-item tilt-card magnetic">
+                    <div class="stat-num-container"><h3 class="counter" data-target="3">0</h3></div>
+                    <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="18" height="18" fill="currentColor"><path d="M184 48c0-26.5 21.5-48 48-48h48c26.5 0 48 21.5 48 48v48h-144V48zM64 128C28.7 128 0 156.7 0 192v256c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V192c0-35.3-28.7-64-64-64H64z"/></svg> Internships</p>
+                </a>
+            </div>
+            
+            <div class="scroll-indicator">
+                <div class="mouse"><div class="wheel"></div></div>
+                <p>Scroll</p>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title reveal"><span class="text-accent">01.</span> About Me</h2>
+                <div class="about-grid reveal">
+                    <div class="about-text">
+                        <p>I am a passionate Mechatronics Engineering student specializing in the intersection of mechanical design, embedded systems, and autonomous algorithms. My goal is to build intelligent physical systems that solve real-world problems.</p>
+                        <p>With hands-on experience in CAD modeling, PCB design, and robotic control systems (ROS2, C++), I thrive in interdisciplinary environments where hardware meets software.</p>
+                    </div>
+                    <div class="about-highlights tilt-card">
+                        <ul>
+                            <li><i data-lucide="map-pin" class="text-accent"></i> Based in Lahore, Punjab, Pakistan</li>
+                            <li><i data-lucide="check-circle" class="text-accent"></i> Robotics & Automation Specialist</li>
+                            <li><i data-lucide="check-circle" class="text-accent"></i> Firmware & Embedded Systems Developer</li>
+                            <li><i data-lucide="check-circle" class="text-accent"></i> Mechanical & Hardware Designer</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section bg-alt">
+            <div class="container">
+                <h2 class="section-title reveal"><span class="text-accent">02.</span> Core Competencies</h2>
+                <div class="skills-grid">
+                    <div class="skill-category reveal tilt-card">
+                        <div class="skill-header">
+                            <i data-lucide="code"></i>
+                            <h3>Programming Languages</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span>C / C++</span><span>Python</span><span>MATLAB</span>
+                            <span>JavaScript</span><span>HTML / CSS</span><span>Structured Text (PLC)</span>
+                            <span>Bash / Shell</span>
+                        </div>
+                    </div>
+                    <div class="skill-category reveal tilt-card">
+                        <div class="skill-header">
+                            <i data-lucide="activity"></i>
+                            <h3>Simulation Tools</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span>MATLAB / Simulink</span><span>Proteus Design</span><span>NI Multisim</span>
+                            <span>Gazebo (ROS)</span><span>SolidWorks FEA</span><span>CoppeliaSim</span>
+                        </div>
+                    </div>
+                    <div class="skill-category reveal tilt-card">
+                        <div class="skill-header">
+                            <i data-lucide="cpu"></i>
+                            <h3>Hardware Platforms</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span>STM32 (ARM Cortex)</span><span>ESP32 / ESP8266</span><span>Arduino</span>
+                            <span>Raspberry Pi</span><span>PLCs (Siemens / Delta)</span><span>FPGA Boards</span>
+                        </div>
+                    </div>
+                    <div class="skill-category reveal tilt-card">
+                        <div class="skill-header">
+                            <i data-lucide="wrench"></i>
+                            <h3>Tools & Develops</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span>SolidWorks CAD</span><span>Altium Designer</span><span>KiCad EDA</span>
+                            <span>ROS / ROS2</span><span>Git / GitHub</span><span>FreeRTOS</span><span>Linux OS</span>
+                        </div>
+                    </div>
+                    <div class="skill-category reveal tilt-card">
+                        <div class="skill-header">
+                            <i data-lucide="brain"></i>
+                            <h3>Soft Skills</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span>Problem Solving</span><span>Project Management</span><span>Team Leadership</span>
+                            <span>Technical Communication</span><span>Analytical Thinking</span><span>Cross-disciplinary Integration</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container relative">
+                <div class="section-header reveal">
+                    <h2 class="section-title"><span class="text-accent">03.</span> Featured Projects</h2>
+                    <div class="carousel-controls">
+                        <button class="carousel-btn magnetic" id="prev-btn" aria-label="Previous"><i data-lucide="chevron-left"></i></button>
+                        <button class="carousel-btn magnetic" id="next-btn" aria-label="Next"><i data-lucide="chevron-right"></i></button>
+                    </div>
+                </div>
+                <div class="carousel-wrapper reveal">
+                    <!-- Dynamic container populated by projects.js -->
+                    <div id="projects-track" class="projects-track"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section id="process" class="section bg-alt">
+            <div class="container">
+                <h2 class="section-title reveal"><span class="text-accent">04.</span> Engineering Process</h2>
+                <div class="process-timeline reveal">
+                    <div class="process-step tilt-card">
+                        <div class="step-icon"><i data-lucide="lightbulb"></i></div>
+                        <h4>1. System Architecture</h4>
+                        <p>Defining constraints, component selection, and conceptual block diagrams.</p>
+                    </div>
+                    <div class="process-step tilt-card">
+                        <div class="step-icon"><i data-lucide="pen-tool"></i></div>
+                        <h4>2. Hardware Design</h4>
+                        <p>CAD modeling (SolidWorks) and schematic/PCB routing (Altium/KiCad).</p>
+                    </div>
+                    <div class="process-step tilt-card">
+                        <div class="step-icon"><i data-lucide="terminal"></i></div>
+                        <h4>3. Firmware & Logic</h4>
+                        <p>Writing RTOS tasks, control algorithms, and sensor drivers in C/C++.</p>
+                    </div>
+                    <div class="process-step tilt-card">
+                        <div class="step-icon"><i data-lucide="activity"></i></div>
+                        <h4>4. Testing & Integration</h4>
+                        <p>Hardware-in-the-loop testing, debugging, and iterative optimization.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section id="experience" class="section">
+            <div class="container">
+                <h2 class="section-title reveal"><span class="text-accent">05.</span> Professional Experience</h2>
+                <div class="timeline-container reveal">
+                    <div class="timeline">
+                        <div class="timeline-item tilt-card">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-info">
+                                    <h4>Robotics Intern</h4>
+                                    <h5>TechNova Automation <span>| 2023 - Present</span></h5>
+                                    <p>Developed ROS2 navigation stacks for AGVs. Designed custom motor mounts in SolidWorks.</p>
+                                </div>
+                                <a href="#" class="btn btn-outline btn-sm magnetic">VIEW INTERNSHIP CERTIFICATE <i data-lucide="external-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="timeline-item tilt-card">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-info">
+                                    <h4>Embedded Systems Researcher</h4>
+                                    <h5>University R&D Lab <span>| 2022 - 2023</span></h5>
+                                    <p>Programmed STM32 microcontrollers for real-time data acquisition from MEMS accelerometers.</p>
+                                </div>
+                                <a href="#" class="btn btn-outline btn-sm magnetic">VIEW EXPERIENCE LETTER <i data-lucide="external-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section id="education" class="section bg-alt">
+            <div class="container">
+                <h2 class="section-title reveal"><span class="text-accent">06.</span> Education</h2>
+                <div class="timeline-container reveal">
+                    <div class="timeline">
+                        <div class="timeline-item tilt-card">
+                            <div class="timeline-dot"></div>
+                            <h4>B.Sc. Mechatronics Engineering</h4>
+                            <h5>Global Tech University <span>| 2020 - 2024</span></h5>
+                            <p>GPA: 3.8/4.0. Capstone: Autonomous Search and Rescue Drone.</p>
+                        </div>
+                        <div class="timeline-item tilt-card">
+                            <div class="timeline-dot"></div>
+                            <h4>High School Diploma</h4>
+                            <h5>Science & Mathematics <span>| 2016 - 2020</span></h5>
+                            <p>Graduated with Honors. President of the Robotics Club. Participated in national science fairs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Credentials & Awards -->
+        <section id="credentials" class="section">
+            <div class="container">
+                <h2 class="section-title reveal"><span class="text-accent">07.</span> Credentials & Awards</h2>
+                <div class="credentials-grid">
+                    <!-- Certifications -->
+                    <div class="credential-column reveal">
+                        <h3 class="subsection-title"><i data-lucide="file-badge"></i> Certifications</h3>
+                        <div class="credential-card tilt-card">
+                            <h4>Machine Learning (Stanford)</h4>
+                            <p>Comprehensive study of ML algorithms, neural networks, and deep learning.</p>
+                            <a href="#" class="btn btn-outline btn-sm magnetic mt-2">View Certificate <i data-lucide="external-link"></i></a>
+                        </div>
+                        <div class="credential-card tilt-card">
+                            <h4>ROS2 for Beginners</h4>
+                            <p>Mastering Robot Operating System 2 architecture and node communication.</p>
+                            <a href="#" class="btn btn-outline btn-sm magnetic mt-2">View Certificate <i data-lucide="external-link"></i></a>
+                        </div>
+                        <div class="credential-card tilt-card">
+                            <h4>Certified SolidWorks Associate</h4>
+                            <p>Demonstrated proficiency in mechanical design and 3D CAD modeling.</p>
+                            <a href="#" class="btn btn-outline btn-sm magnetic mt-2">Verify Credential <i data-lucide="external-link"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Awards & Leadership -->
+                    <div class="credential-column reveal">
+                        <h3 class="subsection-title"><i data-lucide="award"></i> Awards & Leadership</h3>
+                        <div class="credential-card tilt-card">
+                            <h4>President - University Robotics Club</h4>
+                            <p>Led a team of 40+ engineering students in national robotics competitions.</p>
+                            <a href="#" class="btn btn-outline btn-sm magnetic mt-2">View Activities <i data-lucide="external-link"></i></a>
+                        </div>
+                        <div class="credential-card tilt-card">
+                            <h4>1st Place - Assistive Tech Hackathon</h4>
+                            <p>Developed a low-cost braille display prototype using linear actuators.</p>
+                            <a href="#" class="btn btn-outline btn-sm magnetic mt-2">View Project <i data-lucide="external-link"></i></a>
+                        </div>
+                        <div class="credential-card tilt-card">
+                            <h4>Best Paper Award - IEEE Automation</h4>
+                            <p>Recognized for outstanding research in swarm robotics pathfinding.</p>
+                            <a href="#" class="btn btn-outline btn-sm magnetic mt-2">Read Paper <i data-lucide="external-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Interests -->
+        <section id="research" class="section bg-alt">
+            <div class="container">
+                <h2 class="section-title reveal"><span class="text-accent">08.</span> Research Interests</h2>
+                <div class="research-grid">
+                    <div class="research-card reveal tilt-card">
+                        <div class="research-icon"><i data-lucide="network"></i></div>
+                        <div class="research-content">
+                            <h3>Swarm Robotics & Multi-Agent Systems</h3>
+                            <p>Investigating decentralized control algorithms for drone swarms to achieve collaborative tasks like search and rescue without a central server.</p>
+                            <a href="#" class="btn btn-outline btn-sm magnetic mt-2">View Publications</a>
+                        </div>
+                    </div>
+                    <div class="research-card reveal tilt-card">
+                        <div class="research-icon"><i data-lucide="cpu"></i></div>
+                        <div class="research-content">
+                            <h3>Reinforcement Learning for Locomotion</h3>
+                            <p>Applying deep reinforcement learning to train quadruped robots in physics simulators and transferring the policies to real hardware.</p>
+                            <a href="#" class="btn btn-outline btn-sm magnetic mt-2">View Code Repository</a>
+                        </div>
+                    </div>
+                    <div class="research-card reveal tilt-card">
+                        <div class="research-icon"><i data-lucide="hexagon"></i></div>
+                        <div class="research-content">
+                            <h3>Soft Robotics & Compliant Actuators</h3>
+                            <p>Designing pneumatic and tendon-driven soft actuators for safe human-robot interaction in medical environments.</p>
+                            <a href="#" class="btn btn-outline btn-sm magnetic mt-2">View Prototypes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title reveal"><span class="text-accent">09.</span> Initiate Contact</h2>
+                <div class="contact-grid reveal">
+                    <div class="contact-info">
+                        <h3>Let's Build Something <span class="glow-text">Awesome</span>.</h3>
+                        <p>Currently open for roles in Robotics, Embedded Systems, and Automation Engineering.</p>
+                        <div class="contact-methods">
+                            <a href="mailto:eng.andreyas@gmail.com" class="contact-method magnetic tilt-card">
+                                <i data-lucide="mail"></i> eng.andreyas@gmail.com
+                            </a>
+                            <a href="https://wa.me/923266876694" target="_blank" rel="noopener noreferrer" class="contact-method magnetic tilt-card">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="24" height="24" fill="currentColor" style="color: var(--accent-primary);"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg> +92 326 6876694
+                            </a>
+                            <a href="https://maps.google.com/?q=Lahore,Punjab,Pakistan" target="_blank" rel="noopener noreferrer" class="contact-method magnetic tilt-card">
+                                <i data-lucide="map-pin"></i> Lahore, Punjab, Pakistan
+                            </a>
+                        </div>
+                    </div>
+                    <form id="contact-form" class="contact-form tilt-card">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Message (e.g. Project proposal, hiring inquiry)" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary magnetic">Send Transmission</button>
+                        <div id="form-status" class="form-status-msg" style="display: none;"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-compact-container">
+            <div class="footer-primary-row">
+                <div class="footer-logo-brand">
+                    <img src="./assets/tech_logo.jpg" onerror="this.onerror=null; this.src='./assets/tech_logo.svg';" alt="Andreyas Tech Logo" class="brand-logo-img-sm" referrerPolicy="no-referrer">
+                    <span class="logo-text">Andreyas</span>
+                </div>
+
+                <nav class="footer-horizontal-nav" aria-label="Quick Links">
+                    <a href="#hero" class="footer-nav-link">Home</a>
+                    <a href="#about" class="footer-nav-link">About</a>
+                    <a href="#skills" class="footer-nav-link">Skills</a>
+                    <a href="#projects" class="footer-nav-link">Projects</a>
+                    <a href="#research" class="footer-nav-link">Research</a>
+                    <a href="#contact" class="footer-nav-link">Contact</a>
+                </nav>
+
+                <div class="social-links">
+                    <a href="https://github.com/andreyas-dev" target="_blank" rel="noopener noreferrer" class="magnetic" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" width="18" height="18" fill="currentColor"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></a>
+                    <a href="https://www.linkedin.com/in/eng-andreyas/" target="_blank" rel="noopener noreferrer" class="magnetic" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="18" height="18" fill="currentColor"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a>
+                    <a href="https://wa.me/923266876694" target="_blank" rel="noopener noreferrer" class="magnetic" aria-label="WhatsApp"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="18" height="18" fill="currentColor"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg></a>
+                    <a href="mailto:eng.andreyas@gmail.com" class="magnetic" aria-label="Email"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="18" height="18" fill="currentColor"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg></a>
+                </div>
+            </div>
+
+            <div class="footer-compact-divider"></div>
+
+            <div class="footer-secondary-row">
+                <div class="footer-sec-placeholder"></div>
+                <p class="copyright-text">&copy; <span id="year"></span> All rights reserved by Andreyas</p>
+                <a href="#hero" class="back-to-top-btn magnetic" title="Back to top">
+                    <i data-lucide="arrow-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+   <!-- EmailJS SDK (Ensure this is loaded) -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        // Initialize EmailJS FIRST
+        if (typeof emailjs !== 'undefined') {
+            emailjs.init("nZarZbYAxmWa89SA5");
+        }
+    </script>
+
+    <!-- Data and App Scripts loaded AFTER EmailJS is initialized -->
+    <script src="./js/portfolioData.js"></script>
+    <script src="./js/projects.js"></script>
+    <script src="./js/main.js"></script>
+
+
+    </script>
+</body>
+</html>
