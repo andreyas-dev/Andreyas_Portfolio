@@ -106,7 +106,7 @@ window.portfolioData = {
         stats: [
             { id: "github", count: 10, suffix: "+", label: "GitHub Projects", link: "https://github.com/andreyas-dev", icon: "github" },
             { id: "connections", count: 4.5, suffix: "k+", label: "Connections", link: "https://www.linkedin.com/in/eng-andreyas/", icon: "linkedin" },
-            { id: "certifications", count: 5, suffix: "", label: "Certifications", link: "#credentials", icon: "certificate" },
+            { id: "certifications", count: 4, suffix: "", label: "Certifications", link: "#credentials", icon: "certificate" },
             { id: "internships", count: 2, suffix: "", label: "Internships", link: "#experience", icon: "briefcase" }
         ]
     },
