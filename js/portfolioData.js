@@ -388,7 +388,7 @@ window.portfolioData = {
             }
         },
        {
-    id: "proj-steel-analytics",
+    id: ""proj-2",
     visible: true,
     featured: true,
     title: "Industrial Energy Analytics & Monitoring Dashboard",
@@ -439,11 +439,7 @@ links: {
     demo: "https://steel-energy-analytics.streamlit.app",
     docs: "https://drive.google.com/file/d/your-doc-link/view?usp=sharing"
 }
-    links: {
-        github: "https://github.com/andreyas-dev/steel-energy-analytics-dashboard",
-        demo: "https://steel-energy-analytics.streamlit.app",
-        docs: "https://drive.google.com/file/d/your-doc-link/view?usp=sharing"
-    }
+   
 },
         {
             id: "proj-3",
