@@ -454,7 +454,7 @@ window.portfolioData = {
     results: "Achieved autonomous, near-zero beam tilt with active disturbance rejection; live RPM, current, and roll-angle telemetry validated via UART; functional PCB fabricated and integrated into the hardware prototype.",
     media: {
         thumbnail: "././assets/Projects/Beam_Stabilization_Using_PID_System/Beam_Stabilization_Using_PID_System.png",
-        heroImage: "./assets/Projects/Beam_Stabilization_Using_PID_System/Beam_Stabilization_Using_PID_System.png",
+        heroImage: "./assets/Projects/Beam_Stabilization_Using_PID_System/Beam_Stabilization_Using_PID_System_Hero.png",
         videoDemo: "https://drive.google.com/file/d/1mnd-A9DBWW1y1y4gcqiUpeN2SLVv3h_0/view?usp=sharing",
         gallery: [
             { src: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200", title: "Final Prototype", caption: "Assembled beam with dual BLDC motors and TM4C123 control board." },
