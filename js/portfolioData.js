@@ -436,8 +436,8 @@ window.portfolioData = {
     }
 },
         {
-    id: "proj-4",
-    visible: false,
+    id: "proj-3",
+    visible: true,
     featured: true,
     title: "Beam Stabilization Using PID System",
     category: "Embedded Control Systems",
