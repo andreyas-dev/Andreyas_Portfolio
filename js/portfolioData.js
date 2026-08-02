@@ -387,44 +387,38 @@ window.portfolioData = {
                 docs: "https://drive.google.com/file/d/1Ep2h8FP8KNRRB7ML_DTaFVl3vILM1rPe/view?usp=sharing"
             }
         },
-        {
-            id: "proj-2",
-            visible: false,
-            featured: true,
-            title: "Smart Prosthetic Arm with EMG Control",
-            category: "Biomedical & Embedded",
-            shortDescription: "A low-cost, 3D-printed bionic arm controlled by surface electromyography (sEMG) signals.",
-            description: "A low-cost, 3D-printed bionic arm controlled by surface electromyography (sEMG) signals from the user's residual limb.",
-            problemStatement: "Commercial bionic prosthetics are prohibitively expensive for amputees in developing nations, often costing upwards of $10,000.",
-            engineeringApproach: "Designed an open-source, easily reproducible mechanical assembly paired with a custom low-cost EMG signal conditioning circuit.",
-            mechanicalDesign: "Tendon-driven finger actuation with elastic return to mimic human tendons. Modular socket design allows for patient-specific customization.",
-            electronics: "Custom instrumentation amplifier circuit for sEMG extraction, active filtering to remove noise, and an ESP32 for digital signal processing.",
-            software: "Implemented a Support Vector Machine (SVM) machine learning classifier running on the edge to distinguish between 5 distinct hand gestures.",
-            components: ["ESP32", "MyoWare Muscle Sensor", "N20 Micro Gear Motors", "Nylon Tension Strings", "3D PLA Parts"],
-            tools: ["ESP32", "sEMG Sensors", "Fusion 360", "Machine Learning", "C++"],
-            challenges: "Filtering out 60Hz power line noise from the microvolt-level muscle signals without destroying the original signal bandwidth.",
-            results: "Achieved 92% gesture classification accuracy in live trials. Reduced total manufacturing cost to under $150.",
-            media: {
-                thumbnail: "https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?auto=format&fit=crop&q=80&w=1200",
-                heroImage: "https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?auto=format&fit=crop&q=80&w=1200",
-                videoDemo: "https://drive.google.com/file/d/1k4BGf72hZhxTKJWRC2jscCUzF_1OBTQm/view?usp=sharing",
-                // Engineering Gallery: add/remove/reorder freely. Each item = { src, title, caption }.
-                gallery: [
-                    { src: "https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?auto=format&fit=crop&q=80&w=1200", title: "Final Prototype", caption: "Assembled 3D-printed prosthetic arm." },
-                    { src: "https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?auto=format&fit=crop&q=80&w=1200", title: "CAD Model", caption: "Fusion 360 model of the tendon-driven finger assembly." },
-                    { src: "https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?auto=format&fit=crop&q=80&w=1200", title: "Mechanical Design", caption: "Modular socket for patient-specific fitting." },
-                    { src: "https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?auto=format&fit=crop&q=80&w=1200", title: "Circuit Diagram", caption: "sEMG instrumentation amplifier and filtering stage." },
-                    { src: "https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?auto=format&fit=crop&q=80&w=1200", title: "Sensors", caption: "MyoWare muscle sensor placement on residual limb." },
-                    { src: "https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?auto=format&fit=crop&q=80&w=1200", title: "Testing", caption: "Live gesture classification trials." },
-                    { src: "https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?auto=format&fit=crop&q=80&w=1200", title: "Simulation Results", caption: "SVM classifier accuracy across 5 gesture classes." }
-                ]
-            },
-            links: {
-                github: "https://github.com/andreyas-dev",
-                demo: "https://drive.google.com/file/d/1k4BGf72hZhxTKJWRC2jscCUzF_1OBTQm/view?usp=sharing",
-                docs: "https://drive.google.com/file/d/1234567890/view?usp=sharing"
-            }
-        },
+       {
+    id: "proj-steel-analytics",
+    visible: true,
+    featured: true,
+    title: "Industrial Energy Analytics & Monitoring Dashboard",
+    category: "Industrial Data Science & Analytics",
+    shortDescription: "An interactive web dashboard for real-time monitoring and analytics of industrial steel plant energy consumption.",
+    description: "An end-to-end industrial data analytics system designed to process, clean, and visualize complex power and operational metrics from steel manufacturing facilities to optimize energy efficiency and prevent power factor penalties.",
+    problemStatement: "Heavy manufacturing plants generate massive amounts of power operational data but lack accessible, real-time visual tools to detect inefficient energy usage, low power factors, and peak load surges.",
+    engineeringApproach: "Developed an automated data ingestion and cleaning pipeline in Python (Pandas/NumPy) paired with an interactive dashboard UI to render real-time telemetry, power consumption trends, and load profiles.",
+    software: "Built using Python, Pandas for data preprocessing, and Plotly/Dash/Streamlit for dynamic analytics visualization and deployment.",
+    components: ["Steel Plant Dataset", "Python 3.x", "Pandas Dataframe Engine", "Plotly Charts", "Interactive Dashboard UI"],
+    tools: ["Python", "Pandas", "NumPy", "Plotly", "Streamlit", "Data Analytics"],
+    challenges: "Cleaning raw industrial time-series datasets containing missing sensor readings, high-frequency noise, and aligning multi-variable power factor lag/lead channels.",
+    results: "Successfully built an operational dashboard capable of highlighting high-load cycles, identifying power factor inefficiencies, and streamlining energy management for plant operations.",
+    media: {
+        thumbnail: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1200",
+        heroImage: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1200",
+        videoDemo: "https://drive.google.com/file/d/your-demo-video-link/view?usp=sharing",
+        gallery: [
+            { src: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1200", title: "Main Dashboard UI", caption: "Interactive plant operational dashboard showing live load trends." },
+            { src: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1200", title: "Data Pipeline", caption: "Data preprocessing and cleaning workflow using Pandas." },
+            { src: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200", title: "Power Consumption Analytics", caption: "Visualization of leading/lagging reactive power usage." },
+            { src: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=1200", title: "Efficiency Metrics", caption: "Automated calculation of energy efficiency and peak load times." }
+        ]
+    },
+    links: {
+        github: "https://github.com/andreyas-dev",
+        demo: "https://your-dashboard-app-link.streamlit.app",
+        docs: "https://drive.google.com/file/d/your-doc-link/view?usp=sharing"
+    }
+},
         {
             id: "proj-3",
             visible: false,
