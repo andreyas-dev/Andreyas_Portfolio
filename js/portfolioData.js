@@ -365,20 +365,15 @@ window.portfolioData = {
 
              media: {
                 thumbnail: "./assets/Projects/Automatic_Sorting_Conveyor/Project_1.png",
-                heroImage: "./assets/Projects/Project_1.png",
+                heroImage: "./assets/Projects/Automatic_Sorting_Conveyor/Project_1.png",
                 videoDemo: "https://drive.google.com/file/d/1k4BGf72hZhxTKJWRC2jscCUzF_1OBTQm/view?usp=sharing",
                 // Engineering Gallery: add/remove/reorder freely. Each item = { src, title, caption }.
                 // Replace the placeholder "src" paths below with your real project photos.
                 gallery: [
-                    { src: "./assets/Projects/Project_1.png", title: "Final Prototype", caption: "Fully assembled conveyor system ready for operation." },
-                    { src: "./assets/Projects/Project_1.png", title: "Mechanical Design", caption: "Conveyor frame, rollers, and shaft assembly." },
-                    { src: "./assets/Projects/Project_1.png", title: "PCB Layout", caption: "Custom PCB designed to integrate the control electronics." },
-                    { src: "./assets/Projects/Project_1.png", title: "PCB Assembly", caption: "Soldered and populated control board." },
-                    { src: "./assets/Projects/Project_1.png", title: "Circuit Diagram", caption: "Schematic for the IR sensing and motor driver stage." },
-                    { src: "./assets/Projects/Project_1.png", title: "Wiring", caption: "Sensor and power wiring across the conveyor frame." },
-                    { src: "./assets/Projects/Project_1.png", title: "Sensors", caption: "IR sensor placement for object detection." },
-                    { src: "./assets/Projects/Project_1.png", title: "Testing", caption: "Hardware-in-the-loop testing of sorting logic." },
-                    { src: "./assets/Projects/Project_1.png", title: "LCD Display", caption: "Real-time object count and system status." }
+                         { src: "./assets/Projects/Automatic_Sorting_Conveyor/01-final-prototype.png", title: "Final Prototype", caption: "Fully assembled conveyor system ready for operation." },
+                         { src: "./assets/Projects/Automatic_Sorting_Conveyor/02-pin-interfacing-diagram.png", title: "Pin Interfacing Diagram", caption: "Pin-level connections from the Tiva microcontroller to sensors, LCD, and motor driver." },
+                         { src: "./assets/Projects/Automatic_Sorting_Conveyor/04-circuit-schematic.png", title: "Circuit Schematic", caption: "Full schematic showing IR sensors, LED drivers, LCD, and motor control stage." },
+                         { src: "./assets/Projects/Automatic_Sorting_Conveyor/03-pcb-layout.png", title: "PCB Layout", caption: "Custom PCB routing designed to integrate the control electronics." },
                 ]
             },
             links: {
