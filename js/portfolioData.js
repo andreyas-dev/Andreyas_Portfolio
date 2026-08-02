@@ -397,25 +397,26 @@ window.portfolioData = {
     description: "An end-to-end industrial data analytics system designed to process, clean, and visualize complex power and operational metrics from steel manufacturing facilities to optimize energy efficiency and prevent power factor penalties.",
     problemStatement: "Heavy manufacturing plants generate massive amounts of power operational data but lack accessible, real-time visual tools to detect inefficient energy usage, low power factors, and peak load surges.",
     engineeringApproach: "Developed an automated data ingestion and cleaning pipeline in Python (Pandas/NumPy) paired with an interactive dashboard UI to render real-time telemetry, power consumption trends, and load profiles.",
-    software: "Built using Python, Pandas for data preprocessing, and Plotly/Dash/Streamlit for dynamic analytics visualization and deployment.",
-    components: ["Steel Plant Dataset", "Python 3.x", "Pandas Dataframe Engine", "Plotly Charts", "Interactive Dashboard UI"],
-    tools: ["Python", "Pandas", "NumPy", "Plotly", "Streamlit", "Data Analytics"],
+    software: "Built using Python, Pandas for data preprocessing, scikit-learn for regression/classification/clustering models, and Streamlit for dynamic analytics visualization and deployment.",
+    components: ["Steel Plant Dataset (35,040 readings)", "Python 3.x", "Pandas Dataframe Engine", "scikit-learn ML Models", "Interactive Dashboard UI"],
+    tools: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn", "scikit-learn", "Streamlit", "Data Analytics"],
     challenges: "Cleaning raw industrial time-series datasets containing missing sensor readings, high-frequency noise, and aligning multi-variable power factor lag/lead channels.",
     results: "Successfully built an operational dashboard capable of highlighting high-load cycles, identifying power factor inefficiencies, and streamlining energy management for plant operations.",
     media: {
-        thumbnail: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1200",
-        heroImage: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1200",
+        thumbnail: "01-dataset-overview.png",
+        heroImage: "01-dataset-overview.png",
         videoDemo: "https://drive.google.com/file/d/your-demo-video-link/view?usp=sharing",
         gallery: [
-            { src: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1200", title: "Main Dashboard UI", caption: "Interactive plant operational dashboard showing live load trends." },
-            { src: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1200", title: "Data Pipeline", caption: "Data preprocessing and cleaning workflow using Pandas." },
-            { src: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200", title: "Power Consumption Analytics", caption: "Visualization of leading/lagging reactive power usage." },
-            { src: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=1200", title: "Efficiency Metrics", caption: "Automated calculation of energy efficiency and peak load times." }
+            { src: "01-dataset-overview.png", title: "Dataset Overview", caption: "Live KPI metrics (35,040 readings, 0 missing values) with cleaned data preview." },
+            { src: "02-eda-explorer.png", title: "EDA Explorer", caption: "Custom scatter plot builder showing correlation between energy usage and power factor, color-coded by load type." },
+            { src: "03-model-prediction.png", title: "Live Model Prediction", caption: "Real-time energy usage and load type prediction with confidence scoring and anomaly detection." },
+            { src: "04-cluster-explorer.png", title: "Cluster Explorer", caption: "PCA-projected K-Means clustering revealing 3 distinct plant operating states." },
+            { src: "05-feature-importance.png", title: "Feature Importance", caption: "Ranked Ridge Regression coefficients showing which sensor readings most influence energy consumption." }
         ]
     },
     links: {
-        github: "https://github.com/andreyas-dev",
-        demo: "https://your-dashboard-app-link.streamlit.app",
+        github: "https://github.com/andreyas-dev/steel-energy-analytics-dashboard",
+        demo: "https://steel-energy-analytics.streamlit.app",
         docs: "https://drive.google.com/file/d/your-doc-link/view?usp=sharing"
     }
 },
