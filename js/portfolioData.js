@@ -404,7 +404,7 @@ window.portfolioData = {
     results: "Successfully built an operational dashboard capable of highlighting high-load cycles, identifying power factor inefficiencies, and streamlining energy management for plant operations.",
     media: {
         thumbnail: "./assets/Projects/steel-analytics/01-dataset-overview.png",
-        heroImage: "./assets/Projects/steel-analytics/01-dataset-overview_thumbnail.jpeg",
+        heroImage: "./assets/Projects/steel-analytics/01-dataset-overview_thumbnail.jpg",
         videoDemo: "https://drive.google.com/file/d/your-demo-video-link/view?usp=sharing",
         gallery: [
             { 
