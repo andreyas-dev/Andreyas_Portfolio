@@ -403,15 +403,15 @@ window.portfolioData = {
     challenges: "Cleaning raw industrial time-series datasets containing missing sensor readings, high-frequency noise, and aligning multi-variable power factor lag/lead channels.",
     results: "Successfully built an operational dashboard capable of highlighting high-load cycles, identifying power factor inefficiencies, and streamlining energy management for plant operations.",
     media: {
-        thumbnail: "01-dataset-overview.png",
-        heroImage: "01-dataset-overview.png",
-        videoDemo: "https://drive.google.com/file/d/your-demo-video-link/view?usp=sharing",
+        thumbnail: "./assets/steel-analytics/01-dataset-overview.png",
+        heroImage: "./assets/steel-analytics/01-dataset-overview.png",
+        videoDemo: "https://steel-energy-analytics.streamlit.app",
         gallery: [
-            { src: "01-dataset-overview.png", title: "Dataset Overview", caption: "Live KPI metrics (35,040 readings, 0 missing values) with cleaned data preview." },
-            { src: "02-eda-explorer.png", title: "EDA Explorer", caption: "Custom scatter plot builder showing correlation between energy usage and power factor, color-coded by load type." },
-            { src: "03-model-prediction.png", title: "Live Model Prediction", caption: "Real-time energy usage and load type prediction with confidence scoring and anomaly detection." },
-            { src: "04-cluster-explorer.png", title: "Cluster Explorer", caption: "PCA-projected K-Means clustering revealing 3 distinct plant operating states." },
-            { src: "05-feature-importance.png", title: "Feature Importance", caption: "Ranked Ridge Regression coefficients showing which sensor readings most influence energy consumption." }
+            { src: "./assets/steel-analytics/01-dataset-overview.png", title: "Dataset Overview", caption: "Live KPI metrics (35,040 readings, 0 missing values) with cleaned data preview." },
+            { src: "./assets/steel-analytics/02-eda-explorer.png", title: "EDA Explorer", caption: "Custom scatter plot builder showing correlation between energy usage and power factor, color-coded by load type." },
+            { src: "./assets/steel-analytics/03-model-prediction.png", title: "Live Model Prediction", caption: "Real-time energy usage and load type prediction with confidence scoring and anomaly detection." },
+            { src: "./assets/steel-analytics/04-cluster-explorer.png", title: "Cluster Explorer", caption: "PCA-projected K-Means clustering revealing 3 distinct plant operating states." },
+            { src: "./assets/steel-analytics/05-feature-importance.png", title: "Feature Importance", caption: "Ranked Ridge Regression coefficients showing which sensor readings most influence energy consumption." }
         ]
     },
     links: {
