@@ -456,10 +456,6 @@ window.portfolioData = {
         thumbnail: "././assets/Projects/Beam_Stabilization_Using_PID_System/Beam_Stabilization_Using_PID_System.png",
         heroImage: "./assets/Projects/Beam_Stabilization_Using_PID_System/Beam_Stabilization_Using_PID_System_Hero.png",
         videoDemo: "https://drive.google.com/file/d/1mnd-A9DBWW1y1y4gcqiUpeN2SLVv3h_0/view?usp=sharing",
-        media: {
-    thumbnail: "./assets/Projects/Beam_Stabilization_Using_PID_System/01-final-prototype.png",
-    heroImage: "./assets/Projects/Beam_Stabilization_Using_PID_System/01-final-prototype.png",
-    videoDemo: "https://drive.google.com/file/d/1mnd-A9DBWW1y1y4gcqiUpeN2SLVv3h_0/view?usp=sharing",
     gallery: [
         {
             src: "./assets/Projects/Beam_Stabilization_Using_PID_System/01-final-prototype.png",
@@ -497,13 +493,6 @@ links: {
     github: "https://github.com/andreyas-dev",
     demo: "https://drive.google.com/file/d/1mnd-A9DBWW1y1y4gcqiUpeN2SLVv3h_0/view?usp=sharing",
     docs: "https://drive.google.com/file/d/1234567890/view?usp=sharing"
-}
-    },
-    links: {
-        github: "https://github.com/andreyas-dev",
-        demo: "https://drive.google.com/file/d/1mnd-A9DBWW1y1y4gcqiUpeN2SLVv3h_0/view?usp=sharingQ",
-        docs: "https://drive.google.com/file/d/1234567890/view?usp=sharing"
-    }
 }
 ]
 };
