@@ -489,10 +489,11 @@ window.portfolioData = {
         }
     ]
 },
-links: {
-    github: "https://github.com/andreyas-dev",
-    demo: "https://drive.google.com/file/d/1mnd-A9DBWW1y1y4gcqiUpeN2SLVv3h_0/view?usp=sharing",
-    docs: "https://drive.google.com/file/d/1234567890/view?usp=sharing"
-}
+        links: {
+            github: "https://github.com/andreyas-dev",
+            demo: "https://drive.google.com/file/d/1mnd-A9DBWW1y1y4gcqiUpeN2SLVv3h_0/view?usp=sharing",
+            docs: "https://drive.google.com/file/d/1234567890/view?usp=sharing"
+        }
+ }
 ]
 };
