@@ -373,7 +373,7 @@ window.portfolioData = {
                          { src: "./assets/Projects/Automatic_Sorting_Conveyor/01-final-prototype.png", title: "Final Prototype", caption: "Fully assembled conveyor system ready for operation." },
                          { src: "./assets/Projects/Automatic_Sorting_Conveyor/02-pin-interfacing-diagram.png", title: "Pin Interfacing Diagram", caption: "Pin-level connections from the Tiva microcontroller to sensors, LCD, and motor driver." },
                          { src: "./assets/Projects/Automatic_Sorting_Conveyor/04-circuit-schematic.png", title: "Circuit Schematic", caption: "Full schematic showing IR sensors, LED drivers, LCD, and motor control stage." },
-                         { src: "./assets/Projects/Automatic_Sorting_Conveyor/03-pcb-layout.png", title: "PCB Layout", caption: "Custom PCB routing designed to integrate the control electronics." },
+                         { src: "./assets/Projects/Automatic_Sorting_Conveyor/03-pcb-layout.jpg", title: "PCB Layout", caption: "Custom PCB routing designed to integrate the control electronics." },
                 ]
             },
             links: {
