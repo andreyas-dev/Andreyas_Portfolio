@@ -435,7 +435,7 @@ window.portfolioData = {
         docs: "https://drive.google.com/file/d/10oKqBGG7eiR998I8gKkdy0OEHkMtK1Uu/view?usp=sharing"
     }
 },
-        {
+       {
     id: "proj-3",
     visible: true,
     featured: true,
@@ -453,47 +453,47 @@ window.portfolioData = {
     challenges: "Tuning PID gains to minimize oscillation and overshoot while maintaining fast disturbance rejection; MPU6050 offset calibration to remove mounting/gravity bias; preventing motor stall during startup via a controlled arming sequence; managing mixed 3.3V/5V power rails across sensors and ESCs; filtering noisy IMU data with a complementary filter for stable angle estimates.",
     results: "Achieved autonomous, near-zero beam tilt with active disturbance rejection; live RPM, current, and roll-angle telemetry validated via UART; functional PCB fabricated and integrated into the hardware prototype.",
     media: {
-        thumbnail: "././assets/Projects/Beam_Stabilization_Using_PID_System/Beam_Stabilization_Using_PID_System.png",
-        heroImage: "./assets/Projects/Beam_Stabilization_Using_PID_System/Beam_Stabilization_Using_PID_System_Hero.png",
+        thumbnail: "./assets/Projects/Beam_Stabilization_Using_PID_System/01-final-prototype.png",
+        heroImage: "./assets/Projects/Beam_Stabilization_Using_PID_System/01-final-prototype.png",
         videoDemo: "https://drive.google.com/file/d/1mnd-A9DBWW1y1y4gcqiUpeN2SLVv3h_0/view?usp=sharing",
-    gallery: [
-        {
-            src: "./assets/Projects/Beam_Stabilization_Using_PID_System/01-final-prototype.png",
-            title: "Final Prototype",
-            caption: "The completed beam assembly with dual BLDC motors and propellers, ready for closed-loop balance testing."
-        },
-        {
-            src: "./assets/Projects/Beam_Stabilization_Using_PID_System/02-circuit-schematic.png",
-            title: "Circuit Schematic",
-            caption: "Proteus schematic detailing power rails and TM4C123 pin connections for the control board."
-        },
-        {
-            src: "./assets/Projects/Beam_Stabilization_Using_PID_System/03-pcb-layout.png",
-            title: "PCB Layout",
-            caption: "Custom PCB routing designed around the TM4C123GH6PM LaunchPad footprint and power connectors."
-        },
-        {
-            src: "./assets/Projects/Beam_Stabilization_Using_PID_System/04-copper-layer.png",
-            title: "Copper Layer",
-            caption: "Fabrication-ready copper trace layout generated from the PCB layout for manufacturing."
-        },
-        {
-            src: "./assets/Projects/Beam_Stabilization_Using_PID_System/05-assembled-control-board.png",
-            title: "Assembled Control Board",
-            caption: "The TM4C123 LaunchPad wired to sensor and power connections on the finished control board."
-        },
-        {
-            src: "./assets/Projects/Beam_Stabilization_Using_PID_System/06-optocoupler-wiring.png",
-            title: "Optocoupler Wiring",
-            caption: "Close-up of the optocoupler connections to VCC and ground near the beam's pivot point."
-        }
-    ]
-},
-        links: {
-            github: "https://github.com/andreyas-dev",
-            demo: "https://drive.google.com/file/d/1mnd-A9DBWW1y1y4gcqiUpeN2SLVv3h_0/view?usp=sharing",
-            docs: "https://drive.google.com/file/d/1234567890/view?usp=sharing"
-        }
- }
+        gallery: [
+            {
+                src: "./assets/Projects/Beam_Stabilization_Using_PID_System/01-final-prototype.png",
+                title: "Final Prototype",
+                caption: "The completed beam assembly with dual BLDC motors and propellers, ready for closed-loop balance testing."
+            },
+            {
+                src: "./assets/Projects/Beam_Stabilization_Using_PID_System/02-circuit-schematic.png",
+                title: "Circuit Schematic",
+                caption: "Proteus schematic detailing power rails and TM4C123 pin connections for the control board."
+            },
+            {
+                src: "./assets/Projects/Beam_Stabilization_Using_PID_System/03-pcb-layout.png",
+                title: "PCB Layout",
+                caption: "Custom PCB routing designed around the TM4C123GH6PM LaunchPad footprint and power connectors."
+            },
+            {
+                src: "./assets/Projects/Beam_Stabilization_Using_PID_System/04-copper-layer.png",
+                title: "Copper Layer",
+                caption: "Fabrication-ready copper trace layout generated from the PCB layout for manufacturing."
+            },
+            {
+                src: "./assets/Projects/Beam_Stabilization_Using_PID_System/05-assembled-control-board.png",
+                title: "Assembled Control Board",
+                caption: "The TM4C123 LaunchPad wired to sensor and power connections on the finished control board."
+            },
+            {
+                src: "./assets/Projects/Beam_Stabilization_Using_PID_System/06-optocoupler-wiring.png",
+                title: "Optocoupler Wiring",
+                caption: "Close-up of the optocoupler connections to VCC and ground near the beam's pivot point."
+            }
+        ]
+    },
+    links: {
+        github: "https://github.com/andreyas-dev",
+        demo: "https://drive.google.com/file/d/1mnd-A9DBWW1y1y4gcqiUpeN2SLVv3h_0/view?usp=sharing",
+        docs: "https://drive.google.com/file/d/1234567890/view?usp=sharing"
+    }
+}
 ]
 };
