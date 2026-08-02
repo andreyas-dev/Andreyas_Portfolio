@@ -388,7 +388,7 @@ window.portfolioData = {
             }
         },
        {
-    id: ""proj-2",
+    id: "proj-2",
     visible: true,
     featured: true,
     title: "Industrial Energy Analytics & Monitoring Dashboard",
@@ -403,43 +403,42 @@ window.portfolioData = {
     challenges: "Cleaning raw industrial time-series datasets containing missing sensor readings, high-frequency noise, and aligning multi-variable power factor lag/lead channels.",
     results: "Successfully built an operational dashboard capable of highlighting high-load cycles, identifying power factor inefficiencies, and streamlining energy management for plant operations.",
     media: {
-    thumbnail: "assets/Projects/steel-analytics/01-dataset-overview.png",
-    heroImage: "assets/Projects/steel-analytics/01-dataset-overview.png",
-    videoDemo: "https://drive.google.com/file/d/your-demo-video-link/view?usp=sharing",
-    gallery: [
-        { 
-            src: "assets/Projects/steel-analytics/01-dataset-overview.png", 
-            title: "Dataset Overview", 
-            caption: "Live KPI metrics (35,040 readings, 0 missing values) with cleaned data preview." 
-        },
-        { 
-            src: "assets/Projects/steel-analytics/02-eda-explorer.png", 
-            title: "EDA Explorer", 
-            caption: "Custom scatter plot builder showing correlation between energy usage and power factor, color-coded by load type." 
-        },
-        { 
-            src: "assets/Projects/steel-analytics/03-model-prediction.png", 
-            title: "Live Model Prediction", 
-            caption: "Real-time energy usage and load type prediction with confidence scoring and anomaly detection." 
-        },
-        { 
-            src: "assets/Projects/steel-analytics/04-cluster-explorer.png", 
-            title: "Cluster Explorer", 
-            caption: "PCA-projected K-Means clustering revealing 3 distinct plant operating states." 
-        },
-        { 
-            src: "assets/Projects/steel-analytics/05-feature-importance.png", 
-            title: "Feature Importance", 
-            caption: "Ranked Ridge Regression coefficients showing which sensor readings most influence energy consumption." 
-        }
-    ]
-},
-links: {
-    github: "https://github.com/andreyas-dev/steel-energy-analytics-dashboard",
-    demo: "https://steel-energy-analytics.streamlit.app",
-    docs: "https://drive.google.com/file/d/your-doc-link/view?usp=sharing"
-}
-   
+        thumbnail: "./assets/Projects/steel-analytics/01-dataset-overview.png",
+        heroImage: "./assets/Projects/steel-analytics/01-dataset-overview.png",
+        videoDemo: "https://drive.google.com/file/d/your-demo-video-link/view?usp=sharing",
+        gallery: [
+            { 
+                src: "./assets/Projects/steel-analytics/01-dataset-overview.png", 
+                title: "Dataset Overview", 
+                caption: "Live KPI metrics (35,040 readings, 0 missing values) with cleaned data preview." 
+            },
+            { 
+                src: "./assets/Projects/steel-analytics/02-eda-explorer.png", 
+                title: "EDA Explorer", 
+                caption: "Custom scatter plot builder showing correlation between energy usage and power factor, color-coded by load type." 
+            },
+            { 
+                src: "./assets/Projects/steel-analytics/03-model-prediction.png", 
+                title: "Live Model Prediction", 
+                caption: "Real-time energy usage and load type prediction with confidence scoring and anomaly detection." 
+            },
+            { 
+                src: "./assets/Projects/steel-analytics/04-cluster-explorer.png", 
+                title: "Cluster Explorer", 
+                caption: "PCA-projected K-Means clustering revealing 3 distinct plant operating states." 
+            },
+            { 
+                src: "./assets/Projects/steel-analytics/05-feature-importance.png", 
+                title: "Feature Importance", 
+                caption: "Ranked Ridge Regression coefficients showing which sensor readings most influence energy consumption." 
+            }
+        ]
+    },
+    links: {
+        github: "https://github.com/andreyas-dev/steel-energy-analytics-dashboard",
+        demo: "https://steel-energy-analytics.streamlit.app",
+        docs: "https://drive.google.com/file/d/your-doc-link/view?usp=sharing"
+    }
 },
         {
             id: "proj-3",
