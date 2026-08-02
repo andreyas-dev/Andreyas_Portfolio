@@ -34,32 +34,31 @@ document.addEventListener('DOMContentLoaded', () => {
     const brandName = window.portfolioData?.personal?.brandName || 'Portfolio';
     document.title = `${proj.title} | ${brandName}`;
 
-    const detailCardsHtml = `
+    // Define all possible detail cards. Each only renders if the
+    // corresponding field exists (and is non-empty) on the project object.
+    // No fallback/placeholder text is shown -- missing field = card hidden.
+    const cardDefinitions = [
+        { key: 'problemStatement', icon: 'target',         label: 'Problem Statement' },
+        { key: 'mechanicalDesign', icon: 'wrench',         label: 'Mechanical Design' },
+        { key: 'electronics',      icon: 'cpu',            label: 'Electronics' },
+        { key: 'software',         icon: 'code',           label: 'Software' },
+        { key: 'engineeringApproach', icon: 'settings',    label: 'Engineering Approach' },
+        { key: 'challenges',       icon: 'alert-triangle', label: 'Challenges' },
+        { key: 'results',          icon: 'check-circle',   label: 'Results' }
+    ];
+
+    const activeCards = cardDefinitions.filter(def => {
+        const value = proj[def.key];
+        return typeof value === 'string' && value.trim().length > 0;
+    });
+
+    const detailCardsHtml = activeCards
+        .map(def => `
         <div class="detail-card">
-            <h4><i data-lucide="target"></i> Problem Statement</h4>
-            <p>${proj.problemStatement || 'Detailed analysis of domain-specific engineering constraints.'}</p>
+            <h4><i data-lucide="${def.icon}"></i> ${def.label}</h4>
+            <p>${proj[def.key]}</p>
         </div>
-        <div class="detail-card">
-            <h4><i data-lucide="wrench"></i> Mechanical Design</h4>
-            <p>${proj.mechanicalDesign || 'CAD modeling and structural stress optimization.'}</p>
-        </div>
-        <div class="detail-card">
-            <h4><i data-lucide="cpu"></i> Electronics</h4>
-            <p>${proj.electronics || 'Microcontroller architecture and sensor signal conditioning.'}</p>
-        </div>
-        <div class="detail-card">
-            <h4><i data-lucide="code"></i> Software</h4>
-            <p>${proj.software || 'Control algorithms and embedded firmware logic.'}</p>
-        </div>
-        <div class="detail-card">
-            <h4><i data-lucide="alert-triangle"></i> Challenges</h4>
-            <p>${proj.challenges || 'Iterative hardware-in-the-loop debugging.'}</p>
-        </div>
-        <div class="detail-card">
-            <h4><i data-lucide="check-circle"></i> Results</h4>
-            <p>${proj.results || 'Validated operational performance and metric targets.'}</p>
-        </div>
-    `;
+    `).join('');
 
     container.innerHTML = `
         <div class="project-detailed reveal">
@@ -76,6 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <p class="lead">${proj.description || proj.shortDescription || ''}</p>
                 </div>
             </div>
+            ${activeCards.length ? `
             <div class="project-body-scroller">
                 <div class="project-details-track">
                     ${detailCardsHtml}
@@ -83,6 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     ${detailCardsHtml}
                 </div>
             </div>
+            ` : ''}
 
             <div class="project-tech-section">
 
