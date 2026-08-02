@@ -453,8 +453,8 @@ window.portfolioData = {
     challenges: "Tuning PID gains to minimize oscillation and overshoot while maintaining fast disturbance rejection; MPU6050 offset calibration to remove mounting/gravity bias; preventing motor stall during startup via a controlled arming sequence; managing mixed 3.3V/5V power rails across sensors and ESCs; filtering noisy IMU data with a complementary filter for stable angle estimates.",
     results: "Achieved autonomous, near-zero beam tilt with active disturbance rejection; live RPM, current, and roll-angle telemetry validated via UART; functional PCB fabricated and integrated into the hardware prototype.",
     media: {
-        thumbnail: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200",
-        heroImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200",
+        thumbnail: "./assets/Projects/steel-analytics/./assets/Projects/steel-analytics/01-dataset-overview.png",
+        heroImage: "./assets/Projects/steel-analytics/./assets/Projects/steel-analytics/01-dataset-overview.png",
         videoDemo: "https://drive.google.com/file/d/1mnd-A9DBWW1y1y4gcqiUpeN2SLVv3h_0/view?usp=sharing",
         gallery: [
             { src: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200", title: "Final Prototype", caption: "Assembled beam with dual BLDC motors and TM4C123 control board." },
