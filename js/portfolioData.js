@@ -456,15 +456,48 @@ window.portfolioData = {
         thumbnail: "././assets/Projects/Beam_Stabilization_Using_PID_System/Beam_Stabilization_Using_PID_System.png",
         heroImage: "./assets/Projects/Beam_Stabilization_Using_PID_System/Beam_Stabilization_Using_PID_System_Hero.png",
         videoDemo: "https://drive.google.com/file/d/1mnd-A9DBWW1y1y4gcqiUpeN2SLVv3h_0/view?usp=sharing",
-        gallery: [
-            { src: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200", title: "Final Prototype", caption: "Assembled beam with dual BLDC motors and TM4C123 control board." },
-            { src: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200", title: "Mechanical Design", caption: "Pivoted beam on wood base with bearing-mounted shaft." },
-            { src: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200", title: "Wiring", caption: "Current sensor and ESC ground connections." },
-            { src: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200", title: "Testing", caption: "Live balancing test with UART telemetry monitoring." },
-            { src: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200", title: "PCB Design", caption: "Custom PCB schematic and copper layer designed in Proteus." },
-            { src: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200", title: "Circuit Schematics", caption: "Proteus schematic showing TM4C123 pin connections." },
-            { src: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200", title: "Control Flow", caption: "PID control loop: sensor read, error compute, PWM update." }
-        ]
+        media: {
+    thumbnail: "./assets/Projects/Beam_Stabilization_Using_PID_System/01-final-prototype.png",
+    heroImage: "./assets/Projects/Beam_Stabilization_Using_PID_System/01-final-prototype.png",
+    videoDemo: "https://drive.google.com/file/d/1mnd-A9DBWW1y1y4gcqiUpeN2SLVv3h_0/view?usp=sharing",
+    gallery: [
+        {
+            src: "./assets/Projects/Beam_Stabilization_Using_PID_System/01-final-prototype.png",
+            title: "Final Prototype",
+            caption: "The completed beam assembly with dual BLDC motors and propellers, ready for closed-loop balance testing."
+        },
+        {
+            src: "./assets/Projects/Beam_Stabilization_Using_PID_System/02-circuit-schematic.png",
+            title: "Circuit Schematic",
+            caption: "Proteus schematic detailing power rails and TM4C123 pin connections for the control board."
+        },
+        {
+            src: "./assets/Projects/Beam_Stabilization_Using_PID_System/03-pcb-layout.png",
+            title: "PCB Layout",
+            caption: "Custom PCB routing designed around the TM4C123GH6PM LaunchPad footprint and power connectors."
+        },
+        {
+            src: "./assets/Projects/Beam_Stabilization_Using_PID_System/04-copper-layer.png",
+            title: "Copper Layer",
+            caption: "Fabrication-ready copper trace layout generated from the PCB layout for manufacturing."
+        },
+        {
+            src: "./assets/Projects/Beam_Stabilization_Using_PID_System/05-assembled-control-board.png",
+            title: "Assembled Control Board",
+            caption: "The TM4C123 LaunchPad wired to sensor and power connections on the finished control board."
+        },
+        {
+            src: "./assets/Projects/Beam_Stabilization_Using_PID_System/06-optocoupler-wiring.png",
+            title: "Optocoupler Wiring",
+            caption: "Close-up of the optocoupler connections to VCC and ground near the beam's pivot point."
+        }
+    ]
+},
+links: {
+    github: "https://github.com/andreyas-dev",
+    demo: "https://drive.google.com/file/d/1mnd-A9DBWW1y1y4gcqiUpeN2SLVv3h_0/view?usp=sharing",
+    docs: "https://drive.google.com/file/d/1234567890/view?usp=sharing"
+}
     },
     links: {
         github: "https://github.com/andreyas-dev",
