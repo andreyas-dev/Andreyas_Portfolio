@@ -432,7 +432,7 @@ window.portfolioData = {
     links: {
         github: "https://github.com/andreyas-dev/steel-energy-analytics-dashboard",
         demo: "https://steel-energy-analytics.streamlit.app",
-        docs: "https://drive.google.com/file/d/your-doc-link/view?usp=sharing"
+        docs: "https://drive.google.com/file/d/10oKqBGG7eiR998I8gKkdy0OEHkMtK1Uu/view?usp=sharing"
     }
 },
         {
