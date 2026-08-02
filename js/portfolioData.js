@@ -436,42 +436,41 @@ window.portfolioData = {
     }
 },
         {
-            id: "proj-3",
-            visible: false,
-            featured: true,
-            title: "Automated Optical Inspection System",
-            category: "Computer Vision & Automation",
-            shortDescription: "High-speed computer vision system for real-time defect detection on PCB manufacturing lines.",
-            description: "High-speed computer vision system for real-time defect detection on PCB manufacturing lines, utilizing custom lighting and edge AI.",
-            problemStatement: "Manual inspection of high-density PCBs is slow and error-prone, leading to bottlenecks in production.",
-            engineeringApproach: "Developed an integrated hardware-software solution combining high-framerate industrial cameras with a TensorRT-optimized YOLOv8 model.",
-            mechanicalDesign: "Designed a vibration-isolated camera gantry with a darkroom enclosure to eliminate ambient light interference.",
-            electronics: "Custom LED strobe controller synchronized with camera exposure triggers to capture blur-free images of moving PCBs.",
-            software: "Python and C++ using OpenCV and TensorRT for inference. React dashboard for real-time statistics.",
-            components: ["NVIDIA Jetson Orin", "Basler GigE Camera", "Custom LED Strobe Driver", "Omron Linear Actuators"],
-            tools: ["OpenCV", "TensorRT", "YOLOv8", "NVIDIA Jetson", "C++", "Python"],
-            challenges: "Achieving sub-50ms inference times while maintaining high accuracy on microscopic solder joint defects.",
-            results: "Increased inspection throughput by 400% compared to human operators. Achieved 99.7% true positive defect detection rate.",
-            media: {
-                thumbnail: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200",
-                heroImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200",
-                videoDemo: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-                // Engineering Gallery: add/remove/reorder freely. Each item = { src, title, caption }.
-                gallery: [
-                    { src: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200", title: "Final Prototype", caption: "Camera gantry and inspection enclosure." },
-                    { src: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200", title: "Mechanical Design", caption: "Vibration-isolated gantry with darkroom housing." },
-                    { src: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200", title: "Wiring", caption: "LED strobe controller wiring synced to camera trigger." },
-                    { src: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200", title: "Testing", caption: "Live defect detection on the PCB manufacturing line." },
-                    { src: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200", title: "LCD/GUI Screens", caption: "React dashboard showing real-time inspection statistics." },
-                    { src: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200", title: "Simulation Results", caption: "YOLOv8 inference benchmark on solder joint defects." },
-                    { src: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200", title: "Flowcharts", caption: "End-to-end inspection pipeline from capture to classification." }
-                ]
-            },
-            links: {
-                github: "https://github.com/andreyas-dev",
-                demo: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-                docs: "https://drive.google.com/file/d/1234567890/view?usp=sharing"
-            }
-        }
-    ]
+    id: "proj-4",
+    visible: false,
+    featured: true,
+    title: "Beam Stabilization Using PID System",
+    category: "Embedded Control Systems",
+    shortDescription: "Real-time beam stabilization system using differential BLDC motor thrust, controlled by a bare-metal PID controller on a TM4C123 microcontroller with MPU6050 IMU feedback.",
+    description: "A TM4C123-based closed-loop control system that balances a pivoted beam by driving two BLDC motors differentially. Beam angle is estimated via an MPU6050 IMU (accelerometer + gyro fused with a complementary filter), and a discrete PID loop running on bare-metal C computes real-time thrust corrections sent to the ESCs via PWM.",
+    problemStatement: "A pivoted beam under gravity and external disturbances cannot hold a level (0°) position without continuous, fast corrective torque — this requires accurate angle sensing and a real-time embedded control loop rather than manual or open-loop actuation.",
+    engineeringApproach: "Designed and implemented a full embedded control pipeline: MPU6050 sensor fusion for roll-angle estimation, a custom discrete PID controller (P/I/D terms with anti-windup clamping) computed every 10 ms, and differential PWM signals sent to two ESCs to translate control effort into restoring torque. Included ESC arming/safety sequencing so the system never enters balance mode with stalled motors.",
+    mechanicalDesign: "Pivoted beam built on a wood base using a drone-frame (plastic) structure, an 8mm steel/aluminum shaft with bearings for smooth rotation, a metal joint as the pivot point, and ice-cream-stick supports for the belt/wiring path. Two BLDC motors with DJI 550 propellers mounted at each end of the beam for differential thrust.",
+    electronics: "TM4C123GH6PM LaunchPad (ARM Cortex-M4, 80 MHz) as the controller; two 1400KV BLDC motors driven by 30A ESCs; MPU6050 IMU over I2C; two current sensors (0–5V analog, ±30A) for motor load monitoring; laser transmitter/receiver pair for position/alignment reference; 12V/50A regulated power supply. Custom PCB designed in Proteus (schematic capture, footprint assignment, routing, DRC, Gerber export) to host the TM4C123 module and interconnects.",
+    software: "Bare-metal C firmware — PLL/clock init, UART telemetry, I2C driver for the MPU6050, PWM generation for ESC control, timer-based RPM capture on two channels, ADC-based current sensing with calibration, and a custom PID module (PID_Init, PID_Compute, anti-windup, output clamping) tuned with Kp = 0.9, Ki = 0.05, Kd = 0.15. Real-time telemetry (RPM, PWM pulse widths, motor current, roll angle) streamed over UART.",
+    components: ["TM4C123GH6PM LaunchPad", "2x BLDC Motor (1400KV)", "2x 30A ESC", "MPU6050 IMU", "2x Current Sensor", "Laser Transmitter/Receiver Pair", "12V/50A Power Supply", "DJI 550 Propellers", "Custom PCB"],
+    tools: ["Proteus", "Embedded C", "PID Control Theory", "I2C", "PWM", "ADC", "UART"],
+    challenges: "Tuning PID gains to minimize oscillation and overshoot while maintaining fast disturbance rejection; MPU6050 offset calibration to remove mounting/gravity bias; preventing motor stall during startup via a controlled arming sequence; managing mixed 3.3V/5V power rails across sensors and ESCs; filtering noisy IMU data with a complementary filter for stable angle estimates.",
+    results: "Achieved autonomous, near-zero beam tilt with active disturbance rejection; live RPM, current, and roll-angle telemetry validated via UART; functional PCB fabricated and integrated into the hardware prototype.",
+    media: {
+        thumbnail: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200",
+        heroImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200",
+        videoDemo: "https://drive.google.com/file/d/1mnd-A9DBWW1y1y4gcqiUpeN2SLVv3h_0/view?usp=sharing",
+        gallery: [
+            { src: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200", title: "Final Prototype", caption: "Assembled beam with dual BLDC motors and TM4C123 control board." },
+            { src: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200", title: "Mechanical Design", caption: "Pivoted beam on wood base with bearing-mounted shaft." },
+            { src: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200", title: "Wiring", caption: "Current sensor and ESC ground connections." },
+            { src: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200", title: "Testing", caption: "Live balancing test with UART telemetry monitoring." },
+            { src: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200", title: "PCB Design", caption: "Custom PCB schematic and copper layer designed in Proteus." },
+            { src: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200", title: "Circuit Schematics", caption: "Proteus schematic showing TM4C123 pin connections." },
+            { src: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200", title: "Control Flow", caption: "PID control loop: sensor read, error compute, PWM update." }
+        ]
+    },
+    links: {
+        github: "https://github.com/andreyas-dev",
+        demo: "https://drive.google.com/file/d/1mnd-A9DBWW1y1y4gcqiUpeN2SLVv3h_0/view?usp=sharingQ",
+        docs: "https://drive.google.com/file/d/1234567890/view?usp=sharing"
+    }
+}
+]
 };
