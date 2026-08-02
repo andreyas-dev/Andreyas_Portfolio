@@ -364,7 +364,7 @@ window.portfolioData = {
 
 
              media: {
-                thumbnail: "./assets/Projects/Project_1.png",
+                thumbnail: "./assets/Projects/Automatic_Sorting_Conveyor/Project_1.png",
                 heroImage: "./assets/Projects/Project_1.png",
                 videoDemo: "https://drive.google.com/file/d/1k4BGf72hZhxTKJWRC2jscCUzF_1OBTQm/view?usp=sharing",
                 // Engineering Gallery: add/remove/reorder freely. Each item = { src, title, caption }.
